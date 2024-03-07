@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- 위에는 공통, 아래에 추가하면 여러폰트 사용가능 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Song+Myung&display=swap"
+            rel="stylesheet">
+        <title>favorite_food</title>
+        <style>
+        .song-myung-regular {
+            font-family: "Song Myung", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .title{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        H1.song-myung-regular{
+            font-size: xx-large;
+        }
+        .main{
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text{
+            display: none;
+            font-size: xx-large;
+        }
+        .name {
+            font-size: x-large;
+        }
+        .name:hover+.text {
+            display: block;
+        }
+
+        #one:hover {
+            color : #B0C4DE;
+            background-color: #000000;
+        }
+        #two:hover {
+            color : white;
+            background-color: #000000;
+        }
+        #three:hover {
+            color : #fff0af;
+            background-color: #000000;
+        }
+        #four:hover {
+            color : #eeddff;
+            background-color: #000000;
+        }
+        #five:hover {
+            color : #8E54E9;
+            background-color: #000000;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="title"><H1 class="song-myung-regular">"좋아하는 음식"</H1></div>
+        <div class="main">
+
+            <div class="people">
+                <div class="name"><p class="song-myung-regular " id=one>"권혜경"<p></div>
+                        <div class="text"><p class="song-myung-regular ">고기짱</p><br>
+                            <img class="food"
+                                src="http://192.168.203.107:8080/front-end/image/food1.jpg"
+                                alt="고기사진"
+                                style="width:500px;height:500px;">
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="name"><p class="song-myung-regular" id=two>"김현우"</p></div>
+                        <div class="text"><p class="song-myung-regular ">치킨짱</p><br>
+                            <img class="food"
+                                src="http://192.168.203.107:8080/front-end/image/food2.jpg"
+                                alt="치킨사진"
+                                style="width:500px;height:500px;">
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="name"><p class="song-myung-regular"
+                                id=three>"이산하"</p></div>
+                        <div class="text"><p class="song-myung-regular ">한식짱</p><br>
+                            <img class="food"
+                                src="http://192.168.203.107:8080/front-end/image/food3.jpg"
+                                alt="한식사진"
+                                style="width:500px;height:500px;">
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="name"><p class="song-myung-regular" id=four>"최민"</p></div>
+                        <div class="text"><p class="song-myung-regular">치즈케이크짱</p><br>
+                            <img class="food"
+                                src="http://192.168.203.107:8080/front-end/image/food4.jpg"
+                                alt="치즈케이크사진"
+                                style="width:500px;height:500px;">
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="name"><p class="song-myung-regular" id=five>"황세웅"</p></div>
+                        <div class="text"><p class="song-myung-regular">봉골레파스타짱</p><br>
+                            <img class="food"
+                                src="http://192.168.203.107:8080/front-end/image/food5.jpg"
+                                alt="봉골레파스타사진"
+                                style="width:500px;height:500px;">
+                        </div>
+                    </div>
+                </div>
+
+            </body>
+        </html>
