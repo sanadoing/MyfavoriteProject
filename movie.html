@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>Movie</title>
+
+    <style>
+        .gothic-a1-regular {
+            font-family: "Gothic A1", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body,
+        html {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+            background-color: white;
+            margin: 0;
+            background-size: cover;
+            background-image: url("https://cdn.imweb.me/thumbnail/20230612/174503f9c857e.gif");
+        }
+
+        main {
+            flex: 1;
+            /* background-color: w; */
+        }
+
+
+        h1 {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .image-card {
+            margin: -25px 0 0 -25px;
+            background-color: white;
+            display: inline-block;
+
+            width: 300px;
+
+            margin-left: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* 4px: 오른쪽 (음수는 왼쪽) 8px: (아래 (음수는 위쪽) rgba (그림자 색상)*/
+            transition: all 0.3s ease;
+        }
+
+
+        .image-card:hover {
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .image-card img {
+            width: 100%;
+        }
+
+        .image-card .about {
+            padding: 0px 0px 5px 10px;
+        }
+
+        .image-card p {
+            font-size: 14px;
+        }
+
+        .image-card i {
+            position: absolute;
+            right: 10px;
+            bottom: 18px;
+            font-size: 32px;
+        }
+
+        .image-card i:hover {
+            color: coral
+        }
+
+        #container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            height: auto;
+            min-height: 100%;
+            padding-bottom: 30px;
+            align-items: center
+        }
+
+        .image-card img {
+            transition: all 0.2s linear;
+
+        }
+
+        .image-card:hover {
+            transform: scale(1.4);
+            z-index: 10;
+        }
+
+
+        /* .home{
+            margin-top: 80px;
+            text-align: center;
+        } */
+
+        #wrapper {
+            min-height: calc(80%);
+            position: relative;
+
+        }
+
+        #movies {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 30px;
+            /* position : relative;
+        transform : translateY(-100%); */
+        }
+
+        /* html, body{
+            height: 100%;
+        } */
+        #back {
+            position: fixed;
+            text-align: left;
+            top: 0;
+            padding: 0px 10px;
+            cursor: pointer;
+        }
+
+        #back a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #back a:hover {
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>좋아하는 영화</h1>
+    </header>
+    <main>
+        <div id="back"><a href="main.html">
+                <h1><i class="bi
+                            bi-arrow-left-square"></i></h1>
+            </a></div>
+        <div id='wrapper'>
+            <div id="movies">
+                <div id="container">
+                    <div class="image-card">
+                        <img src="image/movie1.jpg" alt="맘마미아1" width="250" height="300">
+                        <div class="about">
+                            <h4 class="gothic-a1-regular"><strong>권혜경</strong></h4>
+                            <p class="gothic-a1-regular"><strong>영화 명 :
+                                </strong>맘마미아1</p>
+                        </div>
+
+                    </div>
+                    <div class="image-card">
+                        <img src="image/movie2.jpg" alt="스파이더맨" width="250" height="300">
+                        <div class="about">
+                            <h4 class="gothic-a1-regular"><strong>김현우</strong></h4>
+                            <p class="gothic-a1-regular"><strong>영화 명 :
+                                </strong>스파이더맨</p>
+                        </div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="image/movie3.jpg" alt="해리포터" width="250" height="300">
+                        <div class="about">
+                            <h4 class="gothic-a1-regular"><strong>이산하</strong></h4>
+                            <p class="gothic-a1-regular"><strong>영화 명 :
+                                </strong>해리포터와 마법사의 돌</p>
+                        </div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="image/movie4.jpg" alt="해리포터2" width="250" height="300">
+                        <div class="about">
+                            <h4 class="gothic-a1-regular"><strong>최민</strong></h4>
+                            <p class="gothic-a1-regular"><strong>영화 명 :
+                                </strong>해리포터와 죽음의 성물</p>
+                        </div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="image/movie5.jpg" alt="그래비티" width="250" height="300">
+                        <div class="about">
+                            <h4 class="gothic-a1-regular"><strong>황세웅</strong></h4>
+                            <p class="gothic-a1-regular"><strong>영화 명 :
+                                </strong>그래비티</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <div class="home">
+        <a href="#"><i class="bi bi-house"></i> 메인 화면</a>
+    </div> -->
+    <footer>made by min</footer>
+
+
+</body>
+
+</html>
